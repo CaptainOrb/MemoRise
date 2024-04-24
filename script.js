@@ -1,5 +1,5 @@
-document.getElementById("register-button1").addEventListener("click", redirect_register);
-document.getElementById("register-button2").addEventListener("click", redirect_register);
+document.getElementById("register-button1").addEventListener("click", redirect_startButton);
+document.getElementById("register-button2").addEventListener("click", redirect_startButton);
 
 function redirect_register() {
     window.location = "codeLoginRegister/register.html"
