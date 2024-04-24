@@ -1,7 +1,11 @@
-document.getElementsByClassName("register-button").addEventListener("click", redirect_register);
+var buttons = document.getElementsByClassName("register-button");
 
-function redirect_register(){
-    window.location = "codeLoginRegister/register.html"
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", redirect_register);
+}
+
+function redirect_register() {
+    window.location.href = "codeLoginRegister/register.html";
 }
 
 document.getElementById("login-button").addEventListener("click", redirect_login);
