@@ -1,12 +1,12 @@
-// var buttons = document.getElementsByClassName("register-button");
+var buttons = document.getElementsByClassName("register-button");
 
-// for (var i = 0; i < buttons.length; i++) {
-//     buttons[i].addEventListener("click", redirect_register);
-// }
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", redirect_register);
+}
 
-// function redirect_register() {
-//     window.location.href = "codeLoginRegister/register.html";
-// }
+function redirect_register() {
+    window.location.href = "codeLoginRegister/register.html";
+}
 
 document.getElementById("login-button").addEventListener("click", redirect_login);
 
