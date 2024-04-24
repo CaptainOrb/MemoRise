@@ -2,7 +2,7 @@ document.getElementById("register-button1").addEventListener("click", redirect_r
 document.getElementById("register-button2").addEventListener("click", redirect_register);
 
 function redirect_register() {
-    window.location = "codeLoginRegister/register.html";
+    window.location = "codeLoginRegister/register.html"
 }
 
 document.getElementById("login-button").addEventListener("click", redirect_login);
