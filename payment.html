@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./CSS/payment.css">
+    <link href='https://fonts.googleapis.com/css?family=Inika' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lalezar' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="sideStep">
+        <button class="step" id="one">1</button>
+        <div class="current" id="cr1"> </div>
+
+        <button class="step" id="two">2</button>
+        <div class="current" id="cr2"></div>
+    </div>
+    <div class="mainContainer">
+        <form class="payment" method="post" name="payment">
+            <div class="title">
+                <h1>PAYMENT OPTIONS</h1>
+            </div>
+            <div class="option">
+                <label for="COD" class="custom-radio">
+                    <input type="radio" name="paymentOption" id="COD" class="radioInput">
+                    <div class="radio-label">Cash on Delivery</div>
+                </label>
+                
+                <label for="VA" class="custom-radio">
+                    <input type="radio" name="paymentOption" id="VA" class="radioInput">
+                    <div class="radio-label">Virtual Account Billing</div>
+                    <p>Select Virtual Account</p>
+                    <div class="paymentMethod">
+                        <div class="columnLeft">
+                            <label for="BCA" class="custom-radioPM">
+                                <input type="radio" name="paymentMethod" id="BCA" class="radioInput">
+                                <img src="./MemoRise Photo Album/Assets/Payment Method/BCA-VA.png" alt="BCA-VA Icon" class="iconPM">
+                                <div class="radio-labelPM">BCA Virtual Account</div>
+                            </label>
+                            
+                            <label for="BNI" class="custom-radioPM">
+                                <input type="radio" name="paymentMethod" id="BNI" class="radioInput">
+                                <img src="./MemoRise Photo Album/Assets/Payment Method/BNI-VA.png" alt="BNI-VA Icon" class="iconPM">
+                                <div class="radio-labelPM">BNI Virtual Account</div>
+                            </label>
+
+                            <label for="BRI" class="custom-radioPM">
+                                <input type="radio" name="paymentMethod" id="BRI" class="radioInput">
+                                <img src="./MemoRise Photo Album/Assets/Payment Method/BRI-VA.png" alt="BRI-VA Icon" class="iconPM">
+                                <div class="radio-labelPM">BRI Virtual Account</div>
+                            </label>
+                        </div>
+
+                        <div class="columnRight">
+                            <label for="SB" class="custom-radioPM">
+                                <input type="radio" name="paymentMethod" id="SB" class="radioInput">
+                                <img src="./MemoRise Photo Album/Assets/Payment Method/SB-VA.png" alt="SB-VA Icon" class="iconPM">
+                                <div class="radio-labelPM">SeaBank Virtual Account</div>
+                            </label>
+
+                            <label for="othersBank" class="custom-radioPM">
+                                <input type="radio" name="paymentMethod" id="othersBank" class="radioInput">
+                                <img src="./MemoRise Photo Album/Assets/Payment Method/OthersBank.png" alt="Others Bank" class="iconPM">
+                                <div class="radio-labelPM">Others Banks</div>
+                            </label>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="CreditDebit" class="custom-radio">
+                    <input type="radio" name="paymentOption" id="CreditDebit" class="radioInput">
+                    <div class="radio-label">Credit / Debit Card</div>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+    <div class="subContainer">
+        <div class="priceDetail">
+            <div class="titlePD">
+                <h2 class="titlePart">PRICE DETAILS</h3>
+            </div>
+
+            <div class="mainPD">
+                <div class="category">
+                    <p class="textDetail">“Holiday” Photo Album</p>
+                    <p class="textDetail">Delivery Charges</p>
+                </div>
+
+                <div class="price">
+                    <p class="textDetail">Rp100.000</p>
+                    <p class="textDetail">Rp10.000</p>
+                </div>
+            </div>
+
+            <div class="footerPD">
+                <div class="titleTP">
+                    <h2 class="titlePart">Total Charges </h3>
+                </div>
+                <div class="priceTP">
+                    <h2 class="titlePart">Rp110.000</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="advertisement">
+            <div class="mainADS">
+                <img src="./MemoRise Photo Album/Assets/Truck.png" alt="Truck Icon">
+                <div class="adsDetails">
+                    <h3>Get <span class="free">Free</span> Shipping Details</h3>
+                    <p>Free shipping up to Rp10.000</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="checkOut">
+            <h1>CHECK OUT</h1>
+        </button>
+    </div>
+
+    <div class="back">
+        <a href="./fillForm.html">&lt Back</a>
+        <a href="./showOrder.html">
+            <button class="showOrder">
+                <h3>Show Order</h3>
+            </button>
+        </a>
+    </div>
+
+    <script src="./JavaScript/payment.js"></script>
+</body>
+</html>

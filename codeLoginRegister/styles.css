@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:wght@100..900&display=swap');
+
+
+body {
+    margin: 0;
+    background-color: rgba(160, 191, 224, 1);
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.flex-container {
+    display: flex; 
+
+}
+
+.container {
+    display: flex;
+    height: 80%; 
+    width: 80%;
+}
+
+.container .left {
+    width: 40%;
+    background-color: rgba(120, 149, 203, 1);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.container .right {
+    width: 60%; 
+    background-color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.container .left img {
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+    margin-top: 10px;
+}
+
+.container .left h1 {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 24px 10px;
+}
+
+.container .left h1 span {
+    color: rgba(36, 45, 111, 1);
+}
+
+.container .right #regTitle {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(36, 45, 111, 1);
+    font-size: 40px;
+    text-align: center;
+    margin: 24px 10px;
+    line-height: 50px;
+}
+
+.container .right .register-form .form-group {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.container .right .form-group label {
+    width: 220px; 
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(36, 45, 111, 1);
+    font-size: 20px;
+}
+
+.container .right .form-group input::placeholder {
+    color: black;
+}
+
+.container .right .form-group input {
+    width: 400px;
+    height: 45px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-size: 16px;
+    color: black;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.container .right .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .right .btn-container #register-button {
+    height: 35px;
+    width: 200px;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+    background-color: rgba(160, 191, 224, 1);
+    border-radius: 50px;
+    border: none; 
+}
+
+.container .right .btn-container #register-button:hover {
+    cursor: pointer;
+    background-color: rgba(124, 132, 191, 1);
+}
+
+.container .right .options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.container .right h2 {
+    text-align: center;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.container .right p {
+    text-align: center;
+    color: rgba(47, 58, 123, 1);
+    font-size: 18px;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container .right p a {
+    color: rgba(160, 191, 224, 1);
+}
+
+.container .right p a:hover {
+    color: rgba(124, 132, 191, 1);
+}
+
+
+.container .right .options button {
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.container .right .options button:hover {
+    background-color: rgba(160, 191, 224, 1);
+    color: white;
+}
+
+.container .right .login-form .form-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.container .right #login-title {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(36, 45, 111, 1);
+    font-size: 40px;
+    text-align: center;
+    margin: 70px 10px;
+    line-height: 50px;
+}
+
+.container .right .btn-container #login-button {
+    height: 35px;
+    width: 200px;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+    background-color: rgba(160, 191, 224, 1);
+    border-radius: 50px;
+    border: none; 
+}
+
+.container .right .btn-container #login-button:hover {
+    cursor: pointer;
+    background-color: rgba(124, 132, 191, 1);
+}
+
+
+.container .right .login-form #forgot-pass {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.container .right .login-form #forgot-pass:hover {
+    color: rgb(131, 143, 212);
+}
+
+.container .right #login-or {
+    margin-top:0;
+}
+

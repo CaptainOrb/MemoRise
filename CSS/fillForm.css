@@ -1,0 +1,273 @@
+*, body{
+    font-family: 'Inika';
+    background: #C5DFF8;
+    margin: 0px;
+    padding: 0px; 
+    outline: none;
+    border: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.sideStep{
+    border-radius: 0px 40px 40px 0px;
+    background: #7895CB;
+    width: 177px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40% 0px;
+}
+
+#one{
+    border-radius: 100%;
+    padding: 22px 21px 30px 21px;
+    border: 8px solid #40498B;
+}
+
+#two{
+    border-radius: 100%;
+    padding: 22px 21px 30px 21px;
+    border: 8px solid #D6DBFB;
+}
+
+.step{
+    background: none;
+    line-height: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.step:hover{
+    cursor: pointer;
+}
+
+.current{
+    height:0px;
+    width:0px;
+    border-right:solid 20px #C5DFF8;
+    border-top:solid 15px transparent;
+    border-bottom:solid 15px transparent;
+    position: absolute;
+    background: none;
+}
+
+#cr1{
+    left: 8.7vw;
+    top: 36.7vh;
+}
+
+#cr2{
+    display: none;
+    left: 8.7vw;
+    top: 59.25vh;
+}
+
+.container{
+    margin: 10px 50px;
+    width: 100%;
+}
+
+.title h1{
+    font-family: 'Lalezar' !important;
+    margin-top: 20px;
+    font-size: 90px;
+    line-height: 4rem;
+    font-weight: 200;
+    color: #4A55A2;
+}
+
+.subTitle{
+    font-family: 'Lalezar' !important;
+    font-size: 30px;
+    font-weight: 200;
+    color: #4A55A2;
+    margin-top: 15px;
+}
+
+.input{
+    border-radius: 100px;
+    width: 525px;
+    margin: 8px 0px;
+    padding: 18px 20px;
+    font-size: 20px;
+    background: #FFFFFF;
+}
+
+.note{
+    color: #9094AE;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.full{
+    border-radius: 100px;
+    width: 83.5vw;
+    margin: 8px 0px;
+    padding: 18px 20px;
+    font-size: 20px;
+    background: #FFFFFF;
+}
+
+.postCode{
+    border-radius: 100px;
+    width: 12vw;
+    margin: 8px 0px;
+    padding: 18px 20px;
+    font-size: 20px;
+    background: #FFFFFF;
+}
+
+.city{
+    border-radius: 100px;
+    width: 25vw;
+    margin: 8px 0px;
+    padding: 18px 20px;
+    font-size: 20px;
+    background: #FFFFFF;
+}
+
+
+.detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.countryMenu{
+    padding: 18px 20px;
+    width: 30vw;
+    margin: 8px 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 18px;
+}
+
+.countryMenu img{
+    height: 20px;
+    position: absolute;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: none;
+}
+
+/* CSS untuk menyembunyikan elemen select */
+.select-wrapper select {
+    opacity: 100;
+    padding: 20px 20px;
+    font-size: 20px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* CSS untuk styling gambar dropdown */
+.select-wrapper img {
+    position: absolute;
+    top: 62.5%;
+    right: 20px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Mencegah gambar dari menangkap event klik */
+}
+
+.phoneNumber{
+    display: flex;
+    flex-direction: row;
+}
+
+.indonesiaCode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 100px;
+    width: 80px;
+    margin: 8px 0px;
+    padding: 18px 20px;
+    font-size: 20px;
+    background: #FFFFFF;
+    margin-right: 25px;
+}
+
+.indonesiaCode img{
+    height: 25px;
+    border: 1px solid black;
+}
+
+.indonesiaCode p{
+    background: none;
+    font-size: 20px;
+}
+
+.telInput{
+    border-radius: 100px;
+    width: 487px;
+    margin: 8px 0px;
+    padding: 18px 20px;
+    font-size: 20px;
+    background: #FFFFFF; 
+}
+
+.emailInput{
+    border-radius: 100px;
+    width: 632px;
+    margin: 8px 0px;
+    padding: 18px 20px;
+    font-size: 20px;
+    background: #FFFFFF; 
+}
+
+.last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.submitButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 100px;
+    width: 100px;
+    margin: 8px 0px;
+    padding: 18px 20px;
+    font-size: 20px;
+    background: #7895CB;    
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+.submitButton:hover{
+    background: #40498B;
+    /* cursor: pointer; */
+}
+
+.last a{
+    text-decoration: none;
+}

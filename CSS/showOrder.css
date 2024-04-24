@@ -1,0 +1,184 @@
+*, body{
+    font-family: 'Inika';
+    background: #C5DFF8;
+    margin: 0px;
+    padding: 0px; 
+    outline: none;
+    border: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+nav{
+    padding: 25px 50px;
+    background: #7895CB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+}
+
+.logo, .logo h2, .subLogo, .subLogo p, .numOrder, .numOrder p{
+    background: none;
+}
+
+.logo{
+    padding-right: 15px;
+    border-right: 1px solid #ffff;
+    color: #ffff;
+    line-height: 2.5rem;
+}
+
+.logo h2{
+    font-family: 'Irish Grover' !important;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.subLogo{
+    padding-left: 15px;
+    color: #ffff;
+    line-height: 2.5rem;
+}
+
+.subLogo p{
+    font-size: 17px;
+}
+
+.numOrder{
+    color: #E1DEDE;
+    line-height: 2.5rem;
+}
+
+.numOrder p{
+    font-family: 'Inder' !important;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.container{
+    padding: 0px 50px;
+    height: 80.5vh;
+}
+
+.opening{
+    padding: 50px 0px 60px 0px;
+}
+
+.opening h1{
+    font-family: 'Lalezar' !important;
+    font-weight: 500;
+    color: #4A55A2;
+    font-size: 60px;
+    line-height: 65px;
+}
+
+.opening p{
+    color: #938989;
+    font-size: 26px;
+}
+
+.orderSum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.orderSum h3{
+    font-family: 'Lalezar' !important;
+    font-weight: 500;
+    color: #8087B9;
+    font-size: 33px;
+}
+
+.orderSum p{
+    font-family: 'Inder' !important;
+    color: #938989;
+    font-size: 25px;
+}
+
+.item{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item img{
+    height: 175px;
+}
+
+.item p{
+    padding-top: 5px;
+    font-family: 'Inder' !important;
+    color: #938989;
+}
+
+.product{
+    margin-left: 30px;
+    width: 100vw;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nameProduct{
+    font-family: 'Lalezar' !important;
+    font-weight: 500;
+    font-size: 30px;
+    color: #40498B;
+}
+
+.itemList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.template{
+    font-family: 'Inder' !important;
+    font-size: 25px;
+    color: #938989;
+}
+
+.total{
+    font-family: 'Inder' !important;
+    font-size: 25px;
+    color: #504D4D;
+}
+
+.calculate{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.category{
+    padding-right: 80px;
+}
+
+.totCal{
+    text-align: end;
+}
+
+.back a{
+    font-family: 'Livvic' !important;
+    font-size: 23px;
+    color: #40498B;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.back a:hover{
+    color: #1c224d;
+}

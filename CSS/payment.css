@@ -1,0 +1,421 @@
+*, body{
+    font-family: 'Inika';
+    background: #C5DFF8;
+    margin: 0px;
+    padding: 0px; 
+    outline: none;
+    border: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.sideStep{
+    border-radius: 0px 40px 40px 0px;
+    background: #7895CB;
+    width: 177px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40% 0px;
+}
+
+#one{
+    border-radius: 100%;
+    padding: 22px 21px 30px 21px;
+    border: 8px solid #D6DBFB;
+}
+
+#two{
+    border-radius: 100%;
+    padding: 22px 21px 30px 21px;
+    border: 8px solid #40498B;
+}
+
+.step{
+    background: none;
+    line-height: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.current{
+    height:0px;
+    width:0px;
+    border-right:solid 20px #C5DFF8;
+    border-top:solid 15px transparent;
+    border-bottom:solid 15px transparent;
+    position: absolute;
+    background: none;
+}
+
+#cr1{
+    display: none;
+    left: 8.7vw;
+    top: 36.7vh;
+}
+
+#cr2{
+    left: 8.7vw;
+    top: 59.25vh;
+}
+
+.mainContainer{
+    background: #FFFFFF;
+    border-radius: 50px;
+    margin: 35px 50px;
+    width: 60%;
+}
+
+.payment{
+    background: none;
+}
+
+.title{
+    background: none;
+}
+
+.title h1{
+    font-family: 'Lalezar' !important;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 45px;
+    line-height: 5rem;
+    font-weight: 200;
+    color: #4A55A2;
+    background: none;
+}
+
+.subTitle{
+    font-family: 'Lalezar' !important;
+    font-size: 30px;
+    font-weight: 200;
+    color: #4A55A2;
+    margin-top: 15px;
+}
+
+.input{
+    border-radius: 100px;
+    width: 525px;
+    margin: 8px 0px;
+    padding: 18px 20px;
+    font-size: 20px;
+    background: #FFFFFF;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    background: none;
+    outline: none;
+}
+
+.custom-radio {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    background: none;
+    margin-bottom: 30px;
+    padding: 20px 0px;
+    box-shadow: 0px 4px 10px rgb(167, 167, 167);
+}
+
+.custom-radio .radioInput {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-label {
+    font-family: 'Livvic' !important;
+    font-size: 25px;
+    color: #40498B;
+    background: none;
+    margin-left:60px ;
+}
+
+/* Style the custom radio button */
+.custom-radio .radioInput ~ .radio-label:before {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4A55A2;
+    border-radius: 50%;
+}
+
+/* Style the custom radio button when selected */
+.custom-radio .radioInput:checked ~ .radio-label:before {
+    background-color: #4A55A2; /* Change color here */
+    border-color: #4A55A2; /* Change color here */
+}
+
+.custom-radio .radioInput:checked ~ .radio-label {
+    font-weight:bolder;
+}
+
+.custom-radio p{
+    color: #A8A4A4;
+    margin: 10px 0px 0px 60px;
+    background: none;
+    font-size: 15px;
+}
+
+.back{
+    line-height: 24px;
+    background: none;
+    padding: 20px 0px;
+    box-shadow: 0px 4px 10px rgb(167, 167, 167);
+    position: absolute;
+    width: 720.5px;
+    bottom: 10vh;
+    left: 12.9vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back a{
+    font-family: 'Livvic' !important;
+    font-size: 25px;
+    color: #40498B;
+    background: none;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back a:hover{
+    color: #1c224d;
+}
+
+.showOrder{
+    border-radius: 50px;
+    padding: 5px 40px;
+    margin-right: 25px;
+    background: #A0BFE0;
+}
+
+.showOrder h3{
+    font-family: 'Inknut Antiqua';
+    color: #FFFFFF;
+}
+
+.showOrder:hover{
+    cursor: pointer;
+    background: #3f638a;
+}
+
+.paymentMethod{
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.columnLeft{
+    background: none;
+    height: fit-content;
+    width: 50%;
+    padding: 0px 0px 0px 40px;
+}
+
+.columnRight{
+    background: none;
+    height: fit-content;
+    width: 55%;
+    padding: 0px 40px 0px 0px;
+}
+
+.iconPM{
+    width: 40px;
+    margin-left: 60px;
+    background: none;
+}
+
+.custom-radioPM {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    padding: 10px 0px;
+}
+
+.custom-radioPM .radioInput {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-labelPM {
+    font-size: 18px;
+    color: #40498B;
+    background: none;
+    margin-left:10px;
+    margin-top: 5.5px;
+}
+
+/* Style the custom radio button */
+.custom-radioPM .radioInput ~ .radio-labelPM:before {
+    content: '';
+    position: absolute;
+    top: 15.8px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4A55A2;
+    border-radius: 50%;
+}
+
+/* Style the custom radio button when selected */
+.custom-radioPM .radioInput:checked ~ .radio-labelPM:before {
+    background-color: #4A55A2; /* Change color here */
+    border-color: #4A55A2; /* Change color here */
+}
+
+.custom-radioPM .radioInput:checked ~ .radio-labelPM {
+    font-weight: bold;
+}
+
+.subContainer{
+    margin: 35px 50px 35px 0px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.priceDetail{
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.titlePD{
+    background: none;
+    padding: 20px;
+}
+
+.titlePart{
+    color: #40498B;
+    background: none;
+    font-family: 'Lalezar' !important;
+    font-size: 36px;
+}
+
+.mainPD{
+    padding: 20px 20px 65px 20px;
+    background: none;
+    border-top: 1.5px solid rgb(221, 221, 221);
+    border-bottom: 1.5px solid rgb(221, 221, 221);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textDetail{
+    font-family: 'Livvic' !important;
+    background: none;
+    padding: 5px 0px;
+    color: #40498B;
+    font-size: 23px;
+}
+
+.titleTP, .priceTP, .category, .price{
+    background: none;
+}
+
+.footerPD{
+    padding: 10px 20px 35px 20px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advertisement{
+    border-radius: 45px;
+    background: #FFFFFF;
+    padding: 60px 25px 60px 5px;
+    margin-bottom: 55px;
+}
+
+.mainADS{
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.mainADS img, .adsDetails, h3, .free, p{
+    background: none;
+}
+
+.adsDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adsDetails h3, .free{
+    font-family: 'Lalezar' !important;
+    font-size: 26px;
+}
+
+.adsDetails h3{
+    color: #40498B;
+}
+
+.free{
+    color: #5EDCF8;
+}
+
+.adsDetails p{
+    color: #40498B;
+    font-family: 'Livvic';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.checkOut {
+    border-radius: 50px;
+    height: 70px;
+    background: #40498B;
+    color: #FFFFFF;
+    font-size: 18px;
+    display: flex;
+    justify-content: center; /* Memposisikan teks di tengah secara horizontal */
+    align-items: center; /* Memposisikan teks di tengah secara vertikal */
+}
+
+.checkOut h1 {
+    font-family: 'Inknut Antiqua';
+    background: none;
+}
+
+.checkOut:hover{
+    cursor: pointer;
+    background: #1c224d;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | MemoRise Photo Album</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="flex-container">
+    <div class="container">
+        <div class="left">
+            <h1>Share your memories with <span>MemoRise</span></h1>
+            <img src="assets/img_001.png">
+        </div>
+
+        <div class="right">
+            <h1 id="regTitle">Sign Up</h1>
+
+            <form class="register-form" id="register-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="form-input" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-input" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-input" id="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" class="form-input" id="confirmPassword" placeholder="confirm Password" required>
+                </div>
+                <div class="btn-container">
+                    <button id="register-button" type="submit">Sign Up</button>
+                </div>
+            </form>
+
+            <h2>OR</h2>
+
+            <div class="options">
+                <button id="btn-google">Sign-in with Google</button>
+                <button id="btn-microsoft">Sign-in with Microsoft</button>
+            </div>
+
+            <p>Already have an account? <a href="login.html">Sign in</a></p>
+
+        </div>
+    </div>
+</body>
+</html>

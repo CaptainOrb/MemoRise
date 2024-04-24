@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fill Form</title>
+    <link rel="stylesheet" href="./CSS/fillForm.css">
+    <link href='https://fonts.googleapis.com/css?family=Inika' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lalezar' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="sideStep">
+        <button class="step" id="one">1</button>
+        <div class="current" id="cr1"> </div>
+
+        <button class="step" id="two">2</button>
+        <div class="current" id="cr2"></div>
+    </div>
+    <div class="container">
+        <form class="fillForm" method="post" name="fill-Form">
+            <div class="title">
+                <h1>FILL FORM</h1>
+            </div>
+
+            <div class="personalDetail">
+                <h4 class="subTitle">Personal Details</h4>
+                <input type="text" name="NIK" class="input" placeholder="National Identity Number" pattern="[0-9]*" inputmode="numeric">
+                <p class="note">This should be 11 digits number!</p>
+                <div class="name">
+                    <input type="text" name="firstName" class="input" placeholder="First Name">
+                    <input type="text" name="lastName" class="input" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="address">
+                <h4 class="subTitle">Residential Address</h4>
+                <input type="text" name="Street-Address" class="full" placeholder="Street Address">
+                <div class="detail">
+                    <input type="text" name="Post-Code" class="postCode" placeholder="Post Code">
+                    <input type="text" name="City" class="city" placeholder="City">
+                    <div class="countryMenu">
+                        <label for="country" class="select-wrapper">
+                            <select name="country" id="country" class="country">
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Singapura">Singapura</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Filipina">Filipina</option>
+                                <option value="Vietnam">Vietnam</option>
+                            </select>
+                            <img src="./MemoRise Photo Album/Assets/Dropdown.png" alt="Dropdown Icon">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactDetails">
+                <h4 class="subTitle">Contact Details</h4>
+                <div class="phoneNumber">
+                    <div class="indonesiaCode">
+                        <img src="./MemoRise Photo Album/Assets/bendera Indonesia.png" alt="Bendera Indonesia">
+                        <p>+62</p>
+                    </div>
+                    <input type="tel" name="phoneNumber" class="telInput" placeholder="Phone Number">
+                </div>
+                <div class="last">
+                    <input type="email" name="emailAddress" class="emailInput" placeholder="Email Address">
+                    <button class="submitButton" id="nextButton">NEXT</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./JavaScript/fillForm.js"></script>
+</body>
+</html>
