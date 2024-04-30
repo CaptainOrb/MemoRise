@@ -15,9 +15,10 @@ function validateForm() {
         return false
     }
 
-
-    return true 
+    window.location.href = "../YourAlbums.html";
+    return true
 }
+
 
 function pastitrue(){
     return true;
@@ -35,7 +36,3 @@ function isValidName(name) {
 }
 
 
-document.getElementById("register-form").addEventListener("submit", function(event){
-    event.preventDefault();
-    window.location = "../YourAlbums.html";
-})
