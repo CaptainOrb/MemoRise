@@ -1,3 +1,9 @@
+document.getElementById("register-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+  
+    if (validateForm()) window.location.href = "../YourAlbums.html";
+});
+
 function validateForm() {
     var name = document.getElementById("name").value; 
     var password = document.getElementById("password").value;  
@@ -15,8 +21,7 @@ function validateForm() {
         return false
     }
 
-    window.location.href = "../YourAlbums.html";
-    return false
+    return true
 }
 
 
