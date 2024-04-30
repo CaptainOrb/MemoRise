@@ -16,7 +16,7 @@ function validateForm() {
     }
 
     window.location.href = "../YourAlbums.html";
-    return true
+    return false
 }
 
 
