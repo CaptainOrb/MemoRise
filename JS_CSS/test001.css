@@ -55,7 +55,7 @@ p{
 
 .title_edit p{
 	font-family: Pacifico;
-	margin: 0 auto;
+	margin: 0 4vw;
 	font-size: 2.8vw;
 	color: wheat;
 	text-shadow: 2px 2px 4px black;
@@ -92,9 +92,8 @@ p{
 	color: rgb(243, 202, 126);
 }
 
-
 .title_edit.blank{
-	background-color: #E3FEF7;
+	background-color: #E0F4FF;
 	transform: skewX(-20deg);
 	flex: 1;
 }

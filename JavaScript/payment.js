@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (paymentMethodSelected) {
             alert("Berhasil Checkout");
             // Ganti 'fillForm.html' dengan halaman tujuan setelah checkout
-            window.location.href = "./"; // Lempar ke page lain format: "./[nama File HTML].html"
+            window.location.href = "YourAlbums.html"; // Lempar ke page lain format: "./[nama File HTML].html"
         } else {
             alert("Harap Pilih Payment Method yang Tersedia");
         }
