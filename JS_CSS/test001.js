@@ -543,5 +543,23 @@ for(let x=0;x<document.querySelectorAll("div.button_of_album").length;x++){
 	})
 }
 
+function togglePopUpPrint(){
+	var popUpPrint = document.getElementById("popUpPrint");
+	popUpPrint.classList.toggle("active");
+}
 
+function closePopUpPrint() {
+	var popUpPrint = document.getElementById("popUpPrint");
+	popUpPrint.classList.remove("active");
+}
+
+function togglePopUpShare(){
+	var popUpPrint = document.getElementById("popUpShare");
+	popUpPrint.classList.toggle("active");
+}
+
+function closePopUpShare() {
+	var popUpPrint = document.getElementById("popUpShare");
+	popUpPrint.classList.remove("active");
+}
 

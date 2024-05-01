@@ -3,10 +3,118 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./CSS/print.css">
+	<link rel="stylesheet" href="./CSS/share.css">
+	
 	<link rel="stylesheet" type="text/css" href="JS_CSS/test001.css">
 	<title></title>
 </head>
 <body>
+	<div class="popUpPrint" id="popUpPrint">
+        <div class="back">
+            <button onclick="closePopUpPrint()">X</button>
+        </div>
+        <div class="option">
+            <div class="card">
+                <a href="./share.html">
+                    <img src="./MemoRise Photo Album/Assets/Print/Softprint.png" alt="Softprint Icon" class="icon">
+                </a>
+                <p>SOFTPRINT</p>
+            </div>
+
+            <div class="card">
+                <a href="./fillForm.html">
+                    <img src="./MemoRise Photo Album/Assets/Print/Print.png" alt="Print Icon" class="icon">
+                </a>
+                <p>PRINT</p>
+            </div>
+        </div>
+    </div>
+
+
+	<div class="popUpShare" id="popUpShare">
+        <div class="back">
+                <button onclick="closePopUpShare()">X</button>
+        </div>
+        <div class="title">
+            <h1>SHARE TO</h1>
+        </div>
+        <div class="mediaSocial">
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/Facebook.png" alt="Facebook Icon" class="icon">
+                </a>
+                <p>FACEBOOK</p>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/Instagram.png" alt="Instagram Icon" class="icon">
+                </a>
+                <p>INSTAGRAM</p>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/Tiktok.png" alt="TikTok Icon" class="icon">
+                </a>
+                <p>TIKTOK</p>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/WhatsApp.png" alt="Whatsapp Icon" class="icon">
+                </a>
+                <p>WHATSAPP</p>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/More.png" alt="More Icon" class="icon">
+                </a>
+                <p>OTHERS</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/Wesley.png" alt="Wesley's Photo" class="icon">
+                </a>
+                <p>WESLEY</p>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/Naufal.png" alt="Naufal's Photo" class="icon">
+                </a>
+                <p>NAUFAL</p>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/Elson.png" alt="Elson's Photo" class="icon">
+                </a>
+                <p>ELSON</p>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/Baylee.png" alt="Baylee's Photo" class="icon">
+                </a>
+                <p>BAYLEE</p>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="./MemoRise Photo Album/Assets/Share/Search.png" alt="Search Icon" class="icon">
+                </a>
+                <p>OTHERS</p>
+            </div>
+        </div>
+    </div>
+
+
 	<div class="edit_container">
 		<div class="edit_titlebar">
 			<div class="title_edit left">
@@ -14,18 +122,12 @@
 			</div>
 			<div class="title_edit blank"></div>
 			<div class="title_edit right">
-				<p>MemoRise</p>
+				<a href = "YourAlbums.html" id = "Memorise">
+					<p>MemoRise</p>
+				</a>
 				<div class="tombol_share_ama_print">
-					<div class="tobol share">
-						<a href="share.html">
-							<p>Share</p>
-						</a>
-					</div>
-					<div class="tobol print>">
-						<a href="print.html">
-							<p>Print</p>
-						</a>
-					</div>
+					<button class="btn" onclick="togglePopUpShare()">Share</button>
+					<button class="btn" onclick="togglePopUpPrint()">Print</button>
 				</div>
 			</div>
 			<div class="deleteelements">

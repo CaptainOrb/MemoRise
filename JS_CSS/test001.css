@@ -31,6 +31,7 @@ p{
 	display: flex;
 	flex-direction: column;
 	background-color: #E0F4FF;
+	border: 1px solid blue;
 }
 
 .edit_titlebar{
@@ -71,20 +72,24 @@ p{
 	position: absolute;
 	box-sizing: border-box;
 	display: flex;
+	align-items: end;
 }
 
-.tobol{
-	height: 4vw;
-	width: 10vw;
-	margin: auto;
-	background-color:#39A7FF;
-	display: flex;
-	box-sizing: border-box;
-}
-
-.tobol p{
-	margin: auto;
+.btn{
+	margin-right: 80px;
+	text-shadow: 2px 2px 4px black;
+	font-family: Pacifico;
+	font-size: 2.8vw;
+	background: none;
+	border: none;
+	padding: 0;
+	line-height: 50px;
 	color: wheat;
+}
+
+.btn:hover{
+	cursor: pointer;
+	color: rgb(243, 202, 126);
 }
 
 
@@ -353,6 +358,11 @@ p{
 	height: 8vw;
 	margin-top: 10px;
 	box-sizing: border-box;
+	/* border: 1px red solid; */
+}
+
+.sticker_icon:hover{
+	cursor: pointer;
 }
 
 
@@ -362,8 +372,12 @@ p{
     height: 100px; /* Change height to auto */
     width: 100%;
     margin: 10px 0; /* Adjust margin as needed */
+	/* border: red 1px solid; */
 }
 
+.small_images:hover{
+	cursor: pointer;
+}
 
 
 
@@ -474,4 +488,8 @@ p{
 
 .button_of_album p{
 	margin: auto;
+}
+
+#Memorise{
+	text-decoration: none !important;
 }

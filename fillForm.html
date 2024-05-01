@@ -18,7 +18,7 @@
         <div class="current" id="cr2"></div>
     </div>
     <div class="container">
-        <form class="fillForm" method="post" name="fill-Form">
+        <form class="fillForm" method="post" name="fill-Form" onsubmit="return validate()">
             <div class="title">
                 <h1>FILL FORM</h1>
             </div>
@@ -26,7 +26,7 @@
             <div class="personalDetail">
                 <h4 class="subTitle">Personal Details</h4>
                 <input type="text" name="NIK" class="input" placeholder="National Identity Number" pattern="[0-9]*" inputmode="numeric">
-                <p class="note">This should be 11 digits number!</p>
+                <p class="note">This should be 16 digits number!</p>
                 <div class="name">
                     <input type="text" name="firstName" class="input" placeholder="First Name">
                     <input type="text" name="lastName" class="input" placeholder="Last Name">

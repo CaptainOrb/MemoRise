@@ -6,11 +6,21 @@
     border: 0px;
 }
 
-.container{
+.popUpShare{
     background: #C5DFF8;
     width: 550px;
     border: 4px solid black;
     border-radius: 25px;
+    position: absolute;
+    z-index: 9999;
+    top: 53.5%;
+    right: 2%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.popUpShare.active{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1.25);
 }
 
 .back{
